@@ -1,0 +1,114 @@
+#tp-pro-popup {
+    position: fixed;
+    z-index: 999999;
+    width: 300px;
+    max-width: 300px;
+    pointer-events: auto
+}
+
+.tp-pro-popup__dialog {
+    position: relative;
+    background: var(--e-a-bg-default);
+    color: var(--e-a-color-txt);
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+    border: 1px solid var(--e-a-border-color-focus);
+    padding: 20px;
+}
+
+.tp-pro-popup__close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    color: var(--e-a-color-txt);
+    font-size: 22px;
+    cursor: pointer
+}
+
+.tp-pro-popup__header {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 13px;
+}
+
+.tp-pro-popup__title {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--e-a-color-white);
+    line-height: 17px;
+}
+
+.tp-pro-popup__badge {
+    margin-left: 4px;
+    background: #8073FC;
+    color: var(--e-a-color-white);
+    font-weight: 500;
+    font-size: 8px;
+    padding: 4px 6px;
+    border-radius: 2px;
+    height: 17px;
+    align-content: center;
+}
+
+.tp-pro-popup__separator {
+    height: 1px;
+    background: var(--e-a-color-txt);
+    margin: 13px 0px;
+}
+
+.tp-pro-popup__desc {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    margin: 0 0 16px;
+    color: var(--e-a-color-txt);
+}
+
+.tp-pro-popup__actions {
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+
+.tp-pro-popup__btn {
+    display: inline-block;
+    background: #8073FC;
+    color: var(--e-a-color-white);
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 3px;
+    font-weight: 600;
+    text-decoration: none
+}
+
+.tp-pro-popup__link {
+    color: #8073FC;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: -2%;
+}
+
+.tp-pro-popup__link:hover, .tp-pro-popup__btn:hover {
+    color: var(--e-a-color-white);
+}
+
+.tp-pro-popup__arrow {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: var(--e-a-bg-default);
+    transform: rotate(45deg);
+    z-index: 9999999;
+    border: none;
+    border-color: var(--e-a-border-color-focus);
+    border-style: solid;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    box-shadow: -2px -2px 6px rgba(0, 0, 0, .18)
+}
